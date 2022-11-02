@@ -15,6 +15,7 @@ import android.widget.Button;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("LAYOUT A");
 
         btnPindah = findViewById(R.id.btn_daftar);
 
