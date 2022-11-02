@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    tools:context=".MainActivity"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/tv_formulir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMULIR PENDAFTARAN"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:hint="Nama Lengkap "
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tv_formulir"
+        />
+
+    <EditText
+    android:id="@+id/et_np"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:hint="Nomor Pendaftaran"
+    android:layout_below="@id/et_nama"
+    />
+
+
+    <Spinner
+        android:id="@+id/sp_pilih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_np"
+        android:entries="@array/jalur_pendaftaran"
+        android:padding="15dp">
+
+    </Spinner>
+
+    <CheckBox
+        android:id="@+id/cb_centang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_pilih"
+        android:text="Konfirmasi Daftar"
+        />.
+
+
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_centang"
+        android:text="Daftar"
+        android:onClick="Daftar"
+        />.
+
+
+
+</RelativeLayout>

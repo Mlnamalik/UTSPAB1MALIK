@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PAB1MALIK</string>
+    <string-array name="jalur_pendaftaran">
+        <item>Tes Tertulis</item>
+        <item>Jalur Tanpa Tes</item>
+        <item>Ujian Saringan Masuk</item>
+    </string-array>
+</resources>
